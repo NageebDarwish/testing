@@ -1,0 +1,302 @@
+/* Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+:root {
+  --primary-color: #1b2028;
+  --secondary-color: #31353f;
+  --blue-color: #3a6ff8;
+  --green-color: #1ecb4f;
+  --red-color: #f46d22;
+  --grey-color: #a4a6a9;
+  --grey-color-2: #31353f;
+}
+
+.f-inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.f-pop {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100 !important;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
+
+aside {
+  background-color: var(--primary-color);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --------Flex--------- */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.gap-1 {
+  gap: 0.8rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 1.2rem;
+}
+
+/* Positios */
+
+.relative {
+  position: relative;
+}
+
+/* --------Colors--------- */
+
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: var(--grey-color);
+}
+
+.text-green {
+  color: var(--green-color);
+}
+
+.text-red {
+  color: var(--red-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+  padding: 6px;
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+  padding: 1rem;
+}
+
+/* Spacing */
+
+.mt {
+  margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mx-3 {
+  margin: 0 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mx-md-2 {
+    margin: 0 1rem;
+  }
+}
+
+/* Raduis */
+
+.rounded {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.rounded-btn {
+  padding: 10px 30px;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+}
+/* Cols */
+
+.col-3 {
+  width: 33.333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    width: 33.333%;
+  }
+
+  .col-md-4 {
+    width: 25%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-2 {
+    width: 20%;
+  }
+  .col-lg-3 {
+    width: 33.333%;
+  }
+
+  .col-lg-4 {
+    width: 25%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-8 {
+    width: 75%;
+  }
+}
+
+/* Border */
+.border {
+  border: 1px solid var(--grey-color-2);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Side Bar */
+aside {
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none !important;
+  }
+  .main-dash {
+    padding-left: 2rem;
+  }
+}
+
+.logo {
+  padding: 3rem 2rem;
+  user-select: none;
+}
+
+.side-bar-link {
+  padding: 1rem 0 1rem 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Main Dashboard */
+
+.main-dash {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+/* Top Bar */
+.top-bar {
+  padding-top: 3rem;
+}
+
+.search-input {
+  border: 0;
+  outline: none;
+
+  caret-color: white;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
